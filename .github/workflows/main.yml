@@ -1,6 +1,8 @@
 name: deploy
 
 on: #trigger on push & PR to this branch only
+  workflow_dispatch:
+
   push:
     branches:
       - master
