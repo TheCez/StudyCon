@@ -71,9 +71,9 @@ class _SampleItemDetailsViewState extends State<SampleItemDetailsView> {
             if (kIsWeb && constraints.maxWidth > 800) {
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Expanded(child: player),
-                  const SizedBox(
+                children: const [
+                  Expanded(child: player),
+                  SizedBox(
                     width: 500,
                     child: SingleChildScrollView(
                       // child: Controls(),
